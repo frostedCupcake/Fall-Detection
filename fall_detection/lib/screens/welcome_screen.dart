@@ -1,4 +1,5 @@
 import 'package:final_project/screens/login_screen.dart';
+import 'package:final_project/screens/notification_list.dart';
 import 'package:final_project/utils/bold_text.dart';
 import 'package:final_project/utils/normal_text.dart';
 import 'package:flutter/material.dart';
@@ -46,7 +47,7 @@ class WelcomeScreen extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const LoginScreen()));
+                    builder: (context) => NotificationList()));
               },
               child: const NormalText(
                 text: 'Continue',

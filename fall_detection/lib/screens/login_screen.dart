@@ -48,10 +48,10 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  if (_usernameController.text == 'admin' &&
-                      _passwordController.text == '12345') {
+                  if (_usernameController.text == 'a' &&
+                      _passwordController.text == 'a') {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => const NotificationList()));
+                        builder: (context) => NotificationList()));
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(

@@ -46,8 +46,8 @@ class WelcomeScreen extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => NotificationList()));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => LoginScreen()));
               },
               child: const NormalText(
                 text: 'Continue',

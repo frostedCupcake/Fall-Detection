@@ -1,16 +1,22 @@
-# final_project
+# Fall Detection
+IoT-based fall detection using a NodeMCU, MPU6050 sensor, Websockets
 
-A new Flutter project.
+| Date | 10th October 2023|
+| - | - |
+## Setup:
+```bash
+git clone https://github.com/frostedCupcake/Fall-Detection.git
+cd Fall-Detection
+flutter pub get
+flutter run 
+```
 
-## Getting Started
+## Hardware Components:
+- NodeMCU  ESP8266 12E board,
+- MPU6050 6-axis gyroscope/accelerometer sensor,
+- Jumper wires, ESP Cable
 
-This project is a starting point for a Flutter application.
+we compare the acceleration magnitude with a threshold value, if crossed the ESP notifies the Flutter app
 
-A few resources to get you started if this is your first Flutter project:
+![image](https://github.com/frostedCupcake/Fall-Detection/assets/99611801/5204cbe7-1d88-4359-ad0d-7196c46454c4)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
